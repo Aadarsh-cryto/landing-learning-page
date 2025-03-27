@@ -151,4 +151,9 @@
         font-weight: 600;
         font-size: 3.5vw;
       }
+       .right img{
+        padding-top: 10vw;
+        width: 100%;
+        height: 100%;
+      }
      }
