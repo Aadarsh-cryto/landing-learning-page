@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ html,body{
+  height: 100%;
+  width: 100%;
+ }
+   .main{
+    height: 100%;
+    width: 100%;
+    /* background-color: ;  */
+    /* parent ko dete h child bhagte h  */
+    position: relative;
+   }
+    .nav{
+      height: 100px;
+      width: 100%;
+      /* background-color: aqua;  */
+      border-bottom: 2px solid #dadada;
+      display: flex;  
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 4vw;
+    }
+    .navp2{
+      display: flex;
+      gap: 2vw;
+      align-items: center;
+    }
+    .nav h2{
+      font-size: 4vw;
+      font-weight: 700;
+    }
+     .nav h4{
+      font-size: 2vw;
+     }
+     .nav button{
+      font-size: 1vw;
+      padding: 0.6vw 1.4vw;
+      background-color: orangered;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: 700;
+
+     }
+     .nav i{
+      font-size: 2vw;
+      display: none;
+      font-weight: 800;
+
+     }
+     .content{
+      height: calc(100% - 100px);
+      width: 100%;
+      /* background-color: burlywood;  */
+      display: flex;
+      position: relative;
+     }
+     .left{
+      height: 100%;
+      width: 55%;
+      /* background-color: crimson;  */
+      padding: 5vw 4vw;
+     }
+     .left h1{
+      font-size: 4vw;
+      line-height: 4.4vw;
+     }
+     .left h1 span{
+      color: orangered;
+     }
+     .left p{
+      font-size: 2vw;
+      font-weight: 600;
+      color: #666;
+      width: 80%;
+      margin-top: 3vw;
+      margin-bottom: 3vw;
+
+     }
+     .right{
+      height: 100%;
+      width: 45%;
+      /* background-color: royalblue;  */
+     }
+     .right img{
+      height: 100%;
+      width: 100%;
+     }
+    .content button{
+      font-size: 2vw;
+      padding: 1vw 2vw;
+      background-color: orangered;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: 700;
+     }
+     @media (max-width:600px) {
+      .nav{
+        /* background-color: lightgreen;
+        color: #fff; */
+        padding: 0 5vw;
+        height: 60px;
+      }
+      .nav h2{
+        font-size: 6vw;
+      }
+      .nav h4{
+        font-size: 4vw;
+        display: none;
+
+      }
+      .nav button{
+        display: none;
+      }
+      .nav i{
+        display: block;
+        font-size: 6vw;
+      }
+      .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+      }
+      .left{
+        width: 100%;
+        height: 45%;
+        padding: 4vw 6vw;
+        /* background-color: red;  */
+      }
+      .right{
+        width: 100%;
+        height: 55%;
+      }
+      .left h1{
+        font-size: 10vw;
+        line-height: 12vw;
+      }
+      .left p{
+        font-size: 3vw;
+        width: 100%;
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+      }
+      .content button{
+        padding: 4vw 10vw;
+        border-radius: 3px;
+        font-weight: 600;
+        font-size: 3.5vw;
+      }
+     }
